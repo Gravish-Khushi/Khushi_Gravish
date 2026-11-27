@@ -118,13 +118,15 @@ p{margin:0}
 .card .corner.bl{bottom:14px;left:14px;transform:scaleY(-1)}.card .corner.br{bottom:14px;right:14px;transform:scale(-1)}
 .person .role{font-family:var(--deva);color:var(--gold);font-size:16px}
 .person h3{font-size:clamp(36px,6.5vw,48px);color:#fff1da;margin-top:6px}
-.person .tag{font-style:italic;color:#f0cf87;font-size:17px}
+.person .tag{font-style:italic;color:#f0cf87;font-size:20px}
 .person .par{margin-top:12px;font-size:18px;color:var(--ivory)}
-.person .city{margin-top:6px;font-family:var(--caps);font-size:11px;letter-spacing:.3em;color:var(--ivory-dim);text-transform:uppercase}
-.person .par{margin-top:8px}
-.person .gp{margin-top:12px;font-size:18px;color:var(--ivory)}
+.person .city{margin-top:10px;font-family:var(--caps);font-size:13px;letter-spacing:.3em;color:var(--ivory-dim);text-transform:uppercase}
+.person .par{margin-top:12px}
+.person .gp{margin-top:18px}
 /* parent & grandparent lines stay on one line; the script below shrinks them together to fit */
-.person .par,.person .gp{white-space:nowrap;font-size:var(--pfs,min(18px,3vw))}
+.person .par,.person .gp{font-size:clamp(18px,4.8vw,21px);line-height:1.5;color:var(--ivory)}
+.person .nw{white-space:nowrap;font-weight:600;font-size:1.08em}
+@media (max-width:370px){.person .par,.person .gp{font-size:16.5px}.person .nw{font-size:1.1em}}
 .amp{display:flex;align-items:center;gap:16px;margin:26px 0;font-size:44px;font-style:italic;color:var(--gold);line-height:1}
 .amp::before,.amp::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(220,176,98,.7),transparent)}
 
@@ -346,16 +348,16 @@ footer{font-size:13px;letter-spacing:.2em}
       <div class="person">
         <h3>Khushi Bharti</h3>
         <div class="tag">The Bride</div>
-        <p class="gp">Granddaughter of Mr. Radhey Shyam Bharti &amp; Mrs. Usha Bharti</p>
-        <p class="par">Daughter of Mr. Sachin Bharti &amp; Mrs. Jyoti Bharti</p>
+        <p class="gp">Granddaughter of <span class="nw">Mr. Radhey Shyam Bharti</span><br>&amp; <span class="nw">Mrs. Usha Bharti</span></p>
+        <p class="par">Daughter of <span class="nw">Mr. Sachin Bharti</span><br>&amp; <span class="nw">Mrs. Jyoti Bharti</span></p>
         <p class="city">Yavatmal, Maharashtra</p>
       </div>
       <div class="amp">&amp;</div>
       <div class="person">
         <h3>Gravish Purohit</h3>
         <div class="tag">The Groom</div>
-        <p class="gp">Grandson of Late Narayan Purohit &amp; Late Dineshwari Purohit</p>
-        <p class="par">Son of Mr. Rakesh Purohit &amp; Mrs. Karuna Purohit</p>
+        <p class="gp">Grandson of <span class="nw">Late Narayan Purohit</span><br>&amp; <span class="nw">Late Dineshwari Purohit</span></p>
+        <p class="par">Son of <span class="nw">Mr. Rakesh Purohit</span><br>&amp; <span class="nw">Mrs. Karuna Purohit</span></p>
         <p class="city">Indore, Madhya Pradesh</p>
       </div>
     </div>
@@ -382,7 +384,7 @@ footer{font-size:13px;letter-spacing:.2em}
       <canvas id="foil" aria-label="Golden foil. Scratch or tap to reveal the wedding date"></canvas>
     </div>
     <p class="hint">✦ Scratch the golden foil ✦</p>
-    <a class="btn" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Khushi%20%26%20Gravish%20Wedding&amp;dates=20261231T033000Z/20270101T193000Z&amp;ctz=Asia/Kolkata&amp;location=Shivalay%20Resort%20%26%20Marriage%20Garden%2C%20Yavatmal%2C%20Maharashtra&amp;details=Haldi%2C%20Sangeet%2C%20Mangalashtak%20Phere%2C%20Baraat%2C%20Reception%20%26%20Lagan%20Phere.%20With%20love%2C%20the%20Bharti%20%26%20Purohit%20families.">
+    <a class="btn" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Khushi%20%26%20Gravish%20Wedding&amp;dates=20261231T033000Z/20270101T193000Z&amp;ctz=Asia/Kolkata&amp;location=Shivalaya%20Lawns%20and%20Marriage%20Hall%2C%20938P%2B8H%2C%20Kinhi%2C%20Maharashtra%20445002&amp;details=Haldi%2C%20Sangeet%2C%20Mangalashtak%20Phere%2C%20Baraat%2C%20Reception%20%26%20Lagan%20Phere.%20With%20kind%20regards%2C%20Mr.%20Sachin%20%26%20Mrs.%20Jyoti%20Bharti.">
       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="1.5" y="3" width="13" height="11.5"/><path d="M1.5 6.5h13M5 1v3.5M11 1v3.5"/></svg>Add to calendar</a>
   </div>
 </section>
@@ -451,7 +453,7 @@ footer{font-size:13px;letter-spacing:.2em}
             <li>Mrs. Monika – Manish Bharti</li>
             <li>Mrs. Ritu – Kapil Bharti</li>
             <li>Mrs. Juhi – Nikhil Bharti</li>
-            <li>Mrs. Pinki - Deepak Bharti</li>
+            <li>Mrs. Pinki – Deepak Bharti</li>
             <li>Mrs. Beena – Devendra Puri</li>
             <li>Mrs. Himani – Himanshu Puri</li>
           </ul>
@@ -521,7 +523,7 @@ footer{font-size:13px;letter-spacing:.2em}
       <p class="vname">Shivalay Resort &amp; Marriage Garden</p>
       <p class="vcity">Yavatmal, Maharashtra</p>
       <p class="vdates"><span>31 December 2026</span> &amp; <span>1 January 2027</span></p>
-      <a class="btn" target="_blank" rel="noopener" href="https://maps.app.goo.gl/qauGiJisr5NJKxXVA?g_st=ic">
+      <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Shivalaya%20Lawns%20and%20Marriage%20Hall%2C%20938P%2B8H%2C%20Kinhi%2C%20Maharashtra%20445002">
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M8 15s5-5 5-8.5A5 5 0 0 0 3 6.5C3 10 8 15 8 15z"/><circle cx="8" cy="6.5" r="1.8"/></svg>View on map</a>
     </div>
   </div>
@@ -532,7 +534,7 @@ footer{font-size:13px;letter-spacing:.2em}
   <div class="inner rv">
     <div class="divider" style="margin-top:0;margin-bottom:34px"><svg><use href="#diyas"/></svg></div>
     <p class="big">Your gracious presence and blessings will make our celebrations even more special.</p>
-    <div class="sign"><span class="eyebrow">With love</span><strong>The Bharti &amp; Purohit Families</strong></div>
+    <div class="sign"><span class="eyebrow">With kind regards</span><strong>Mr. Sachin &amp; Mrs. Jyoti Bharti</strong></div>
   </div>
 </section>
 </main>
@@ -624,16 +626,6 @@ function mark(){const c=cur();[...dots.children].forEach((d,i)=>d.setAttribute('
 track.addEventListener('scroll',()=>requestAnimationFrame(mark));mark();
 document.getElementById('prev').onclick=()=>go(cur()-1);document.getElementById('next').onclick=()=>go(cur()+1);
 let auto=setInterval(()=>go(cur()+1),4500);['pointerdown','wheel','touchstart'].forEach(ev=>track.addEventListener(ev,()=>clearInterval(auto),{passive:true}));
-
-/* invitation card: keep each parent/grandparent line on one line, all at the same size */
-(function(){
-  const card=document.querySelector('.card'),lines=[...card.querySelectorAll('.par,.gp')];
-  function fit(){card.style.setProperty('--pfs','18px');
-    const need=Math.max(...lines.map(l=>l.scrollWidth/l.clientWidth));
-    if(need>1)card.style.setProperty('--pfs',Math.floor(18/need*10)/10+'px');}
-  fit();if(document.fonts)document.fonts.ready.then(fit);
-  new ResizeObserver(fit).observe(card);
-})();
 
 /* hashtag: tap to copy */
 (function(){
